@@ -1,35 +1,33 @@
 *{
     padding: 0;
-    margin: 0;
+    margin-top: 15%;
     box-sizing: border-box;
    
 }
 body {
-    width: 100%;
-    height: 100vh;
-    background: #fc74fd;  
-    background: -webkit-linear-gradient(to right, #df73ff, #fc74fd); 
-    background: linear-gradient(to right,  #df73ff, #fc74fd);
-    font-family: 'Roboto', sans-serif;  
+   
+    background: #ffffff; /* Fondo blanco */
+    background: -webkit-linear-gradient(to right, #ffffff, #d1d1d1); /* Degradado incluyendo blanco */
+    background: linear-gradient(to right, #ffffff, #d1d1d1);
+    font-family: 'Roboto', sans-serif;
+    background-image: url('images/butterfly.jpg');
 }
 form{
-    position: absolute;
-    min-width: 280px;
-    max-width: 25%;
-    width: 25%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 15px;
-    box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(1rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 30px;
+    background-color: black;
     border-radius: 5px;
     color: #fff;
+    margin-top: 20px;
+    margin-left: 30%;
 }
 h1{
     position: relative;
-    font-size: 18px;
+   
     margin-bottom: 15px;
     padding-bottom: 7px;
 }
@@ -58,6 +56,7 @@ input{
     text-align: center;
     margin-bottom: 15px;
     font-size: 15px;
+    margin-top: 10px;
 }
 button{
     display: block;
