@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleRegistro.css">
     <link rel="stylesheet" href="./estilos-index.css">
+    <link rel="stylesheet" href="./css/styleValidacion.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <title>Formulario de Registro</title>
@@ -64,27 +65,28 @@
         <!-- ********************************************************************** -->
     </header>
     <main>
-        <section>
-            <form action="">
+        <section class="form sign-up-container">
+            <form class="formulario">
                 <h1 class="" style="font-size: 5px; margin: 5px; color: white; "> CREANDO TU CUENTA </h1>
                 <label for="Nombre">Nombre:</label>
-                <input type="text" placeholder="Ingrese su nombre">
+                <input type="text" placeholder="Ingrese Nombre" name="nombre" id="name">
                 <label for="Apellido">Apellido:</label>
-                <input type="text" placeholder="Ingrese su Apellido">
+                <input type="text" placeholder="Ingrese su Apellido"name="nombre" id="name">
                 <label for="email">Correo Electronico:</label>
-                <input type="email" placeholder="Ingrese su Correo">
+                <input type="email" placeholder="Email" name="email" id="email">
                 <label for="Contraseña">Contraseña:</label>
-                <input type="password" placeholder="Ingrese su contraseña">
+                <input type="password" placeholder="Contraseña" name="password" id="password">
                 <p class="acuerdo">Estoy de acuerdo con terminos y condiciones</p>
                 <button>Registrarse</button>
                 <p class="link"><a href="indexLogin.html">¿Ya tienes cuenta?</a></p>
                 </form>
         </section>
         
+        <p class="notify check_notify">¡TE REGISTRASTE CORRECTAMENTE</p>
+        <p class="notify error_notify">¡UPPs! ocurrio un error, por favor verifica tus datos</p>
+        <script src="./js/script.js"></script>  
 
-
-    </main>   
-   
-    <script src="https://kit.fontawesome.com/2ebc501450.js" crossorigin="anonymous"></script>
-</body>
+    </main> 
+    
+    </body>
 </html>

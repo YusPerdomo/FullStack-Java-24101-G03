@@ -11,38 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="./estilos-index.css">
-     <!--  Llamar a marco bootstrap, para barra de navegación responsive -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-     <!--importar las fuente google font -->
-     <!-- google font 1 nav-nombre -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-     <!-- google font 2 enlaces -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-     <!-- google font 3 seccion 1, h1 -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
-     <!-- aca podemos poner un icono-->
+    <link rel="stylesheet" href="./css/styleValidacion.css">
 </head>
 
-
 <body>
+
 
     <div class="contenedor-formulario contenedor">
         <div class="imagen-formulario">
             
         </div>
 
-        <form class="formulario" id="loginForm">
-            <a class="navbar-brand dancing-script-nav-name" style="font-size: 20px; margin: 5px; color: white;"
-                 href="./index.html">IvyLand</a>
+        <form class="formulario">
+            <a class="navbar-brand dancing-script-nav-name" style="font-size: 42px; margin: 5px; color: white;"
+                href="./index.html">IvyLand</a>
             <a href=""><i class="fa-solid fa-heart fa-flip fa-xl" style="color: white;"></i></a>
 
             <div class="texto-formulario">
@@ -51,11 +33,11 @@
             </div>
             <div class="input">
                 <label for="usuario">Usuario</label>
-                <input placeholder="Ingresa tu nombre" type="text" id="usuario">
+                <input type="email" placeholder="Email" id="email2">
             </div>
             <div class="input">
                 <label for="contraseña">Contraseña</label>
-                <input placeholder="Ingresa tu contraseña" type="password" id="contraseña">
+                <input type="password" placeholder="Contraseña" id="password2">
             </div>
             <div class="password-olvidada">
                 <a href="#">¿Olvidaste tu contraseña?</a>
@@ -63,13 +45,12 @@
             <div class="input">
                 <input type="submit" value="Login">
             </div>
-            <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 w-100 mt-auto">
-                <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta? </p><a href="indexRegistro.html" class="text-light font-weight-bold text-decoration-none ">   Crea una Ahora</a>
-            </div>
+            <p class="link"><a href="indexRegistro.html">Registrarse</a></p>
         </form>
     </div>
-        <script src="https://kit.fontawesome.com/2ebc501450.js" crossorigin="anonymous"></script>
-      
+
+    <script src="./js/script.js"></script>  
+
 </body>
 
 </html>
