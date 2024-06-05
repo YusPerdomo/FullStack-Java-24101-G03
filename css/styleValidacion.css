@@ -65,10 +65,10 @@ h1 {
 }
 
 .notify {
-    width: 100%;
+    width: 50%;
     position: absolute;
-    top: 0;
-    padding: 5rem;
+    top: 1;
+    padding: 1rem;
     text-align: center;
     color: #fff;
     display: none;

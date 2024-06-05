@@ -1,7 +1,7 @@
 const formulario = document.querySelector('.formulario'),
       inputs = document.querySelectorAll('.formulario input'),
-      sign_in_container = document.querySelector('.sign-in-container'),
-      sign_up_container = document.querySelector('.sign-up-container');
+      sign_in_container = document.querySelectorAll('.sign-in-container'),
+      sign_up_container = document.querySelectorAll('.sign-up-container');
 
 
 document.addEventListener('click', e => {
@@ -73,6 +73,12 @@ formulario.addEventListener('submit', e => {
         document.querySelector('.error_notify').classList.add('active');
         document.querySelector('.check_notify').classList.remove('active');
     }
+})
+password.addEventListener("keyup", function(){
+    password.classList.remove("errorField")
+})
+email.addEventListener("keyup", function(){
+    email.classList.remove("errorField")
 })
 
 
