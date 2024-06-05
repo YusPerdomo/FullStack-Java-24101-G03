@@ -1,0 +1,124 @@
+{
+  "Catalogo": [
+    {
+      "id": 1,
+      "producto": "Campera",
+      "color": "blanco",
+      "precio": "45000",
+      "categoria": "mujer",
+      "descripcion": "campera de mujercolor blanco"
+    },
+    {
+      "id": 2,
+      "producto": "Bufanda",
+      "color": "gris plomo",
+      "precio": "5000",
+      "categoria": "mujer",
+      "descripcion": "bufanda de mujer color gris plomo"
+    },
+    {
+      "id": 3,
+      "producto": "Jeans",
+      "color": "azul",
+      "precio": "15000",
+      "categoria": "mujer",
+      "descripcion": "Jeans con rotura color azul"
+    },
+    {
+      "id": 4,
+      "producto": "Traje 3 piezas ",
+      "color": "negro",
+      "precio": "200000",
+      "categoria": "hombre",
+      "descripcion": "traje de 3 piezas color negro"
+    },
+    {
+      "id": 5,
+      "producto": "Jeans",
+      "color": "negro",
+      "precio": "16000",
+      "categoria": "hombre",
+      "descripcion": "Jeans con rotura color Negro"
+    },
+    {
+      "id": 6,
+      "producto": "Pantalon corto",
+      "color": "azul",
+      "precio": "12000",
+      "categoria": "hombre",
+      "descripcion": "pantalon corto color azul"
+    },
+    {
+      "id": 7,
+      "producto": "15 anos",
+      "color": "deseado",
+      "precio": "150000",
+      "categoria": "fiesta",
+      "descripcion": "Descoracion de 15 anos"
+    },
+    {
+      "id": 8,
+      "producto": "Campera",
+      "color": "azul",
+      "precio": "45000",
+      "categoria": "mujer",
+      "descripcion": "campera de mujercolor azul"
+    },
+    {
+      "id": 9,
+      "producto": "Infantil",
+      "color": "rosa",
+      "precio": "150000",
+      "categoria": "fiestas",
+      "descripcion": "Decoracion nfantin para ninas"
+    },
+    {
+      "id": 9,
+      "producto": "Infantil",
+      "color": "azul",
+      "precio": "150000",
+      "categoria": "fiestas",
+      "descripcion": "Decoracion nfantin para ninos"
+    },
+    {
+      "id": 10,
+      "producto": "Cumpleanos",
+      "color": "deseado",
+      "precio": "150000",
+      "categoria": "fiestas",
+      "descripcion": "Decoracion nfantin para cumpleanos"
+    },
+    {
+      "id": 11,
+      "producto": "zapatillas",
+      "color": "rojas",
+      "precio": "8000",
+      "categoria": "calzado",
+      "descripcion": "Calzado deportivo unisec "
+    },
+    {
+      "id": 12,
+      "producto": "botines",
+      "color": "negros",
+      "precio": "16000",
+      "categoria": "calzado",
+      "descripcion": "botines de hombre"
+    },
+    {
+      "id": 13,
+      "producto": "zapatillas",
+      "color": "rosas",
+      "precio": "8000",
+      "categoria": "calzado",
+      "descripcion": "Calzado deportivo Juveniles "
+    },
+    {
+      "id": 14,
+      "producto": "Tacones",
+      "color": "crema",
+      "precio": "10000",
+      "categoria": "calzado",
+      "descripcion": "Calzado de tacon Crema"
+    }
+  ]
+}
