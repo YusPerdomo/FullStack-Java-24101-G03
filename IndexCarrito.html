@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ESTRUCTURA BÁSICA -->
+<!-- 1) head -->
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart </title>
-    <link rel="stylesheet" href="./styleCarrito.css">
-    <link rel="stylesheet" href="./estilos-index.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Isla de la Moda</title>
+
+    <!--  Llamar al archivo style.css -->
+    <link rel="stylesheet" href="estilos-index.css">
+    <link rel="stylesheet" href="styleCarrito.css">
+
+    <!--  Llamar a marco bootstrap, para barra de navegación responsive -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 
     <!--importar las fuente google font -->
     <!-- google font 1 nav-nombre -->
@@ -23,90 +40,116 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
     <!-- aca podemos poner un icono-->
-    
+
 </head>
+
+<!-- body | contiene al header, main, section -->
+
 <body>
+    <!-- Especificidad
+    inline > id > clase > tipo
+    !important
+    -->
     <header>
-        <div class="header-section container"> <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <!--  las tres rayitas del burguer  -->
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand dancing-script-nav-name" style="font-size: 42px; margin: 5px; color: white;"
-                href="./index.html">IvyLand</a>
-            <a href=""><i class="fa-solid fa-heart fa-flip fa-xl" style="color: white;"></i></a>
-        </div> 
-            <div>
-                <img onclick="showCart(this)" class="cart" src="./images/cart.png" alt="">
-                <p class="count-product">0</p>
-            </div>
-            <div class="cart-products" id="products-id">
-                <p class="close-btn" onclick="closeBtn()">X</p>
-                <h3>Mi carrito</h3>
-                <div class="card-items">
+        <!-- ********************************************************************** -->
+        <!-- 2) INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  -->
+        <nav class="navbar navbar-inverse nav-header" style="background-color: #fc74fd; border: #df73ff solid 5px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <!--  las tres rayitas del burguer  -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand dancing-script-nav-name" style="font-size: 42px; margin: 5px; color: white;"
+                        href="index.html">IvyLand</a>
+                    <a href=""><i class="fa-solid fa-heart fa-flip fa-xl" style="color: white;"></i></a>
+
+                </div> 
+                <!--  inicio modo responsive (burguer)  -->
+                <div class="collapse navbar-collapse burguer-doble" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right cinzel-enlaces">
+                        <!-- ul padre de los cinco li | necesito que ul ordene a sus hijos sobre un eje horizontal -->
+                        <li><a href="index.html" class="enlaces cinzel-enlaces" style="color: white;">Home</a></li>
+                        <li><a href="IndexCarrito.html" class="enlaces cinzel-enlaces" style="color: white;">Colecciones</a></li>
+                        <li><a href=" " class="enlaces cinzel-enlaces" style="color: white;">+Vendidos</a></li>
+                        <li><a href="indexLogin.html" class="enlaces cinzel-enlaces" style="color: white;">Iniciar sesión</a></li>
+                    </ul>
                 </div>
-                <h2>Total: $<strong class="price-total">0</strong></h2>
+                <!--  fin modo responsive (burguer)  -->
             </div>
-        </div>
+        </nav>
+        <!--  FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  -->
+        <!-- ********************************************************************** -->
     </header>
-      <!-- 3) section 1 | contiene carrusel de descuentos y promociones (sin imagenes?)-->
 
-      <section>
-        <div class="seccion1-carrusel-texto">
-            <div class="carrusel-animacion-texto">
-                <div class="carrusel-texto">
-                    <p>50% descuento</p>
-                </div>
-                <div class="carrusel-texto">
-                    <p>6 cuotas sin interés</p>
-                </div>
 
-                <div class="carrusel-texto">
-                    <p>Envios gratis!</p>
-                </div>
-                <div class="carrusel-texto">
-                    <p>Prueba y devoluciones</p>
-                </div>
+    <!-- main | contiene a las 8 secciones -->
+    <main>
+        <!-- 3) section 1 | contiene carrusel de descuentos y promociones (sin imagenes?)-->
+        <section>
+            <div class="seccion1-carrusel-texto">
+                <div class="carrusel-animacion-texto">
+                    <div class="carrusel-texto">
+                        <p>50% descuento</p>
+                    </div>
+                    <div class="carrusel-texto">
+                        <p>6 cuotas sin interés</p>
+                    </div>
 
-                <div class="carrusel-texto">
-                    <p>50% descuento</p>
-                </div>
-                <div class="carrusel-texto">
-                    <p>6 cuotas sin interés</p>
-                </div>
+                    <div class="carrusel-texto">
+                        <p>Envios gratis!</p>
+                    </div>
+                    <div class="carrusel-texto">
+                        <p>Prueba y devoluciones</p>
+                    </div>
 
-                <div class="carrusel-texto">
-                    <p>Envios gratis!</p>
-                </div>
-                <div class="carrusel-texto">
-                    <p>prueba y devoluciones</p>
+                    <div class="carrusel-texto">
+                        <p>50% descuento</p>
+                    </div>
+                    <div class="carrusel-texto">
+                        <p>6 cuotas sin interés</p>
+                    </div>
+
+                    <div class="carrusel-texto">
+                        <p>Envios gratis!</p>
+                    </div>
+                    <div class="carrusel-texto">
+                        <p>prueba y devoluciones</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
+        </section>  
+
     <section class="container"> 
         <div class="seccion4-titulo-colecciones">
-            <h1 class=" cinzel-enlaces" style="color: #ed14ed;">Colecciones</h1>
+            <h1 class=" cinzel-enlaces" style="color: #0b0b0b;">Clientes mas destacados</h1>
         </div>
+        <div class=" destacados cinzel-enlaces" id="content " style="font-size: 20px; margin: 5px; color: rgb(9, 9, 9);">        
+            <h2 class=" cinzel-enlaces" style="font-size: 40px; margin: 5px; color: rgb(9, 9, 9);"> 
+                Posición - Nombre - Email  - Telefono - username  </h2>
+            <div id="data-container"></div>
+        </div>  
     </section>   
-    <section> 
-        <button onclick="invocarapi()">
-            Invocar ID
-        </button>
-        
-        <table  width="100%" border ="1">
-                    <tbody id="datos"></tbody>
-        </table>
+    <section class="container">
+        <div class="seccion4-titulo-colecciones">
+            <h2 class=" cinzel-enlaces" style="font-size: 40px; margin: 10px; color: rgb(9, 9, 9);">
+                Premio a la Primera Posición</h2>
+        </div>
+        <div class="image-container">
+            <img src="images/products/HombreInvierno.jpg" alt="Descripción de la imagen">
+            <div class="description">
+                <h3 class=" cinzel-enlaces">Traje Armani</h3>
+                <p class=" cinzel-enlaces">Hermoso traje de 3 piesas color Negro.</p>
+            </div>
+        </div>
+
     </section>
-        <!-- 7.1) section 8.1 | Flecha direccional al Home, -->
-        <a class="elemento_fijo" href="#">
-            <i class="fa fa-circle-up"></i>
-        </a>
-    </main>
+      
     
+</main>
+
     <!-- ********************************************************************** -->
     <!-- 8) footer | contiene a los visto en 3) -->
     <!--  INICIO DE FOOTER  -->
@@ -172,7 +215,8 @@
 
         <!-- 9) script |  -->
         <!-- Código https://fontawesome.com para iconos de redes sociales en el footer -->
-        <script src="./js/Api.js" ></script>
+        <script src="./js/ApiCarrito.js" ></script>
+        <script src="./js/Api.js"></script>
         <script src="https://kit.fontawesome.com/2ebc501450.js" crossorigin="anonymous"></script>  
         
 </body>
